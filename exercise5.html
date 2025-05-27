@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ 
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      padding: 20px;
+      font-family: sans-serif;
+      background-color:rgb(221, 221, 235);
+    }
+
+    .uur {
+      display: grid;
+      grid-template-columns: repeat(6, 1fr);
+      gap: 10px;
+      justify-items: center;
+    }
+
+    .u {
+      width: 100px;
+      height: 100px;
+      background-color: navy;
+      
+    }
+
+    .u:hover {
+      transform: scale(1.1);
+    }
+
+    @media (max-width: 900px) {
+      .uur {
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
+
+    @media (max-width: 600px) {
+      .uur {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 480px) {
+      .uur {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  
+  <div class="uur">
+    <div class="u"></div>
+    <div class="u"></div>
+    <div class="u"></div>
+    <div class="u"></div>
+    <div class="u"></div>
+    <div class="u"></div>
+  </div>
+</body>
+</html>
